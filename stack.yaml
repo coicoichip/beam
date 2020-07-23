@@ -2,11 +2,11 @@
 #resolver: lts-10.3
 #resolver: lts-10.5
 #resolver: lts-12.17
-resolver: lts-13.6
+resolver: lts-15.4
 #resolver: nightly-2019-09-28
 packages:
   - beam-sqlite
-  - beam-postgres
+  # - beam-postgres
   - beam-core
   - beam-migrate
   - beam-migrate-cli
@@ -14,6 +14,15 @@ packages:
 nix:
   shell-file: shell.nix
 
-#extra-deps:
+extra-deps:
 #  - dependent-map-0.2.4.0
 #  - dependent-sum-0.5
+- ansi-terminal-0.9.1@sha256:48f53532d0f365ffa568c8cf0adc84c66f800a7d80d3329e4f04fa75392f4af1,3225
+- cryptonite-0.25@sha256:6942644686c4e316c9f312b51151caba779e35f15fb666d255c802b1a84067ae,16776
+- dependent-map-0.4.0.0@sha256:ca2b131046f4340a1c35d138c5a003fe4a5be96b14efc26291ed35fd08c62221,1657
+- dependent-sum-0.7.1.0@sha256:5599aa89637db434431b1dd3fa7c34bc3d565ee44f0519bfbc877be1927c2531,2068
+- haskell-src-exts-1.21.1@sha256:11d18ec3f463185f81b7819376b532e3087f8192cffc629aac5c9eec88897b35,4541
+- network-2.8.0.1@sha256:0f165dffa752d8cde30c2bde86f80609c4f1dc5eeb3182d593041f97839c5b3b,3011
+- sqlite-simple-0.4.18.0@sha256:3ceea56375c0a3590c814e411a4eb86943f8d31b93b110ca159c90689b6b39e5,3002
+- constraints-extras-0.3.0.2@sha256:bf6884be65958e9188ae3c9e5547abfd6d201df021bff8a4704c2c4fe1e1ae5b,1784
+- direct-sqlite-2.3.26@sha256:04e835402f1508abca383182023e4e2b9b86297b8533afbd4e57d1a5652e0c23,3718
